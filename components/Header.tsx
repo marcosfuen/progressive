@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ lang, toggleLanguage, t }) => {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-lg shadow-md border-b border-slate-100 py-2 sm:py-3' 
+          ? 'bg-white/95 backdrop-blur-xl shadow-lg py-2 sm:py-3' 
           : 'bg-transparent py-4 sm:py-6'
       }`}
     >
@@ -140,12 +140,12 @@ const Header: React.FC<HeaderProps> = ({ lang, toggleLanguage, t }) => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl animate-in slide-in-from-top-2 duration-200">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-2xl animate-in slide-in-from-top-2 duration-300">
           <div className="flex flex-col p-6 space-y-4">
             <a 
               href="#benefits" 
               onClick={closeMenu}
-              className="text-lg font-black uppercase tracking-tighter text-slate-800 border-b border-slate-50 pb-4 active:text-blue-600"
+              className="text-lg font-black uppercase tracking-tighter text-slate-800 pb-4 active:text-blue-600"
             >
               {t.navBenefits}
             </a>
